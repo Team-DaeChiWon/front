@@ -1,9 +1,10 @@
 import React, { useState } from "react"
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
+import image from './image/login.png';
 
 let Box = styled.div`
-    width: 900px;
+    width: 950px;
     height: 550px;
     border-radius: 10px;
     margin-left: auto;
@@ -14,14 +15,14 @@ let Box = styled.div`
 
 let SubBox_Left = styled.div`
     display: flex;
-    width: 450px;
+    width: 475px;
     height: 550px;
     background-color: #eee;
     border-radius: 10px 0px 0px 10px;
 `
 
 let SubBox_Right = styled.div`
-    width: 450px;
+    width: 475px;
     height: 550px;
     background-color: #eee;
     border-radius: 0px 10px 10px 0px;
@@ -62,7 +63,7 @@ function Login(){
     return(
         <Box>
             <SubBox_Left>
-
+                <img src={image} width="400px" height="400px"/>
             </SubBox_Left>
             <SubBox_Right>
                 <h1>실버존</h1>
