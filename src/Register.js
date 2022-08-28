@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
-
+import image from './image/login.png'
 let Box = styled.div`
     width: 900px;
     height: 550px;
@@ -37,11 +37,17 @@ function Register(){
     return(
         <Box>
             <SubBox_Left>
-
+                <img src={image}/>
             </SubBox_Left>
 
             <SubBox_Right>
-            
+                <h1>실버존 가입</h1>
+                <input type='text' placeholder='아이디'></input>
+                <input type='password' placeholder='비밀번호'></input>
+                <input type='password' placeholder='비밀번호 확인'></input>
+                <input type='text' placeholder='닉네임'></input>
+                <input type='checkbox'/>
+                <button>회원가입</button>
             </SubBox_Right>
         </Box>
     )
