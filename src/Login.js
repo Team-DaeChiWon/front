@@ -3,8 +3,8 @@ import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
 let Box = styled.div`
-    width: 850px;
-    height: 525px;
+    width: 900px;
+    height: 550px;
     border-radius: 10px;
     margin-left: auto;
     margin-right: auto;
@@ -15,15 +15,15 @@ let Box = styled.div`
 
 let SubBox_Left = styled.div`
     display: flex;
-    width: 425px;
-    height: 525px;
+    width: 450px;
+    height: 550px;
     background-color: #eee;
     border-radius: 10px 0px 0px 10px;
 `
 
 let SubBox_Right = styled.div`
-    width: 425px;
-    height: 525px;
+    width: 450px;
+    height: 550px;
     background-color: #eee;
     border-radius: 0px 10px 10px 0px;
 `
