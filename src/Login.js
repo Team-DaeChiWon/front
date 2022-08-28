@@ -28,7 +28,28 @@ let SubBox_Right = styled.div`
 `
 
 let Input = styled.input`
-    
+    width: 280px;
+    height: 30px;
+    border-radius: 10px;
+    border: 0.5px solid;
+    margin-bottom: 10px;
+    //box-shadow: 1px 1px 0px 0px #8B8B8B;
+`
+
+let Button = styled.button`
+    width: 287px;
+    height: 33px;
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+    background-color: #8B8B8B;
+    //box-shadow: 1px 1px 0px 0px #8B8B8B;
+    margin-top: 20px;
+
+    &:hover{  
+        background-color : white;
+        color: black;
+    }
 `
 
 function Login(){
@@ -47,6 +68,12 @@ function Login(){
                 <h1>실버존</h1>
                 <h3>다른 서비스로 로그인</h3>
 
+                <Input placeholder="  아이디"></Input>
+                <Input placeholder="  비밀번호"></Input>
+                <br></br>
+                <input type="checkbox" name="keep"></input>
+                <div>로그인 상태 유지</div>
+                <Button>로그인</Button>
             </SubBox_Right>
         </Box>
     )
