@@ -10,7 +10,6 @@ let Box = styled.div`
     margin-right: auto;
     margin-top: 10%;
     display: flex;
-    box-shadow: 3px 3px 3px 3px rgb(179, 179, 179);
 ` 
 
 let SubBox_Left = styled.div`
@@ -28,6 +27,10 @@ let SubBox_Right = styled.div`
     border-radius: 0px 10px 10px 0px;
 `
 
+let Input_ID = styled.input`
+
+`
+
 function Login(){
 
     let [id, setId] = useState()
@@ -37,8 +40,15 @@ function Login(){
 
     return(
         <Box>
-            <SubBox_Left></SubBox_Left>
-            <SubBox_Right></SubBox_Right>
+            <SubBox_Left>
+
+            </SubBox_Left>
+            <SubBox_Right>
+                <h1>실버존</h1>
+                <h3>다른 서비스로 로그인</h3>
+
+                <
+            </SubBox_Right>
         </Box>
     )
 }
