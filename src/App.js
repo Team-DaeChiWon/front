@@ -1,7 +1,7 @@
 import React from "react"
 import {Routes, Route, Link} from 'react-router-dom';
 
-import Login from '.login.js';
+import Login from './Login.js';
 
 function App(){
     return(
@@ -12,3 +12,5 @@ function App(){
         </div>
     )
 }
+
+export default App;
