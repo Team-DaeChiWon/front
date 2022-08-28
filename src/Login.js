@@ -27,8 +27,8 @@ let SubBox_Right = styled.div`
     border-radius: 0px 10px 10px 0px;
 `
 
-let Input_ID = styled.input`
-
+let Input = styled.input`
+    
 `
 
 function Login(){
@@ -47,7 +47,6 @@ function Login(){
                 <h1>실버존</h1>
                 <h3>다른 서비스로 로그인</h3>
 
-                <
             </SubBox_Right>
         </Box>
     )
