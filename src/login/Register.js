@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import image from '../image/login.png';
 
+
 let Box = styled.div`
     width: 900px;
     height: 550px;
