@@ -86,6 +86,9 @@ let CheckBox = styled.input` //체크 박스 영역
     border: 1px solid;
     appearance: none;
     cursor: pointer;
+    margin-right: 5px;
+    margin-left: 10px;
+    margin-top: 4px;
 `
 
 let LargeFont = styled.h1` //제일 큰 제목
@@ -120,6 +123,12 @@ let Move_FindId = styled.a` //아이디 찾기 이동
 let Move_FindPassword = styled.a` //비밀번호 찾기 이동
     font-size: 12px;
     margin-left: 10px;
+`
+
+let Img_Part = styled.div`
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
 `
 
 function Login(){
@@ -170,8 +179,15 @@ function Login(){
                     <Move_FindPassword href="/">비밀번호 찾기</Move_FindPassword>
                     
                 </Sub>
+
+                <Img_Part>
+                    <img src={google} width="50px" height="50px" className="" onClick={()=>{
+                        // axios.get('https://kauth.kakao.com/oauth/authorize?response_type=code&client_id=${REST_API_KEY}&redirect_uri=${REDIRECT_URI}')
+                        // .then((result)=>{})
+                    }}></img>
+                    <img src={kakaotalk} width="50px" height="50px" className="" onClick={()=>{}}></img>
+                </Img_Part>
                 
-                <img src={google} width="20px" height="20px"></img>
 
             </SubBox_Right>
         </Box>
