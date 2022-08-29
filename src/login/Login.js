@@ -7,7 +7,7 @@ import google from '../image/google.png';
 import kakaotalk from '../image/kakaotalk.png';
 import axios from "axios";
 
-import '../App.css';
+import './Login.css';
 
 let Box = styled.div`
     width: 950px;
@@ -125,10 +125,10 @@ let Move_FindPassword = styled.a` //비밀번호 찾기 이동
     margin-left: 10px;
 `
 
-let Img_Part = styled.div`
+let Img_Part = styled.div` //구글, 카카오톡 소셜 로그인 이미지 구역
     display: flex;
     justify-content: center;
-    margin-top: 15px;
+    margin-top: 20px;
 `
 
 function Login(){
@@ -181,11 +181,11 @@ function Login(){
                 </Sub>
 
                 <Img_Part>
-                    <img src={google} width="50px" height="50px" className="" onClick={()=>{
+                    <img src={google} width="30px" height="30px" className="google" onClick={()=>{
                         // axios.get('https://kauth.kakao.com/oauth/authorize?response_type=code&client_id=${REST_API_KEY}&redirect_uri=${REDIRECT_URI}')
                         // .then((result)=>{})
                     }}></img>
-                    <img src={kakaotalk} width="50px" height="50px" className="" onClick={()=>{}}></img>
+                    <img src={kakaotalk} width="30px" height="30px" className="kakaotalk" onClick={()=>{}}></img>
                 </Img_Part>
                 
 

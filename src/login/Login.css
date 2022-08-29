@@ -1,0 +1,12 @@
+input[type="checkbox"]:checked {
+    background: #8B8B8B;
+    border: none;
+}
+
+.google{
+    margin-right: 10px;
+}
+
+.kakaotalk{
+    margin-left: 10px;
+}
