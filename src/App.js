@@ -1,8 +1,8 @@
 import React from "react"
 import {Routes, Route, Link} from 'react-router-dom';
 
-import Login from './Login.js';
-import Register from './Register.js';
+import Login from './login/Login.js';
+import Register from './login/Register.js';
 
 function App(){
     return(

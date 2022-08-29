@@ -1,11 +1,13 @@
 import React, { useState } from "react"
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
-import Main_image from './image/login.png';
-import or_img from './image/or_img.jpg';
+import Main_image from '../image/login.png';
+import or_img from '../image/or_img.jpg';
+import google from '../image/google.png';
+import kakaotalk from '../image/kakaotalk.png';
 import axios from "axios";
 
-import './App.css';
+import '../App.css';
 
 let Box = styled.div`
     width: 950px;
@@ -78,10 +80,10 @@ let Keep = styled.div` //로그인 상태 유지 영역
 `
 
 let CheckBox = styled.input` //체크 박스 영역
-    width: 1.1rem;
-    height: 1.1rem;
+    width: 1rem;
+    height: 1rem;
     border-radius: 50%;
-    border: 2px solid;
+    border: 1px solid;
     appearance: none;
     cursor: pointer;
 `
@@ -138,9 +140,9 @@ function Login(){
 
                 <LoginBox>
 
-                    <MiddleFont>다른 서비스로 로그인</MiddleFont>
+                    {/* <MiddleFont>다른 서비스로 로그인</MiddleFont> */}
 
-                    <img src={or_img} width="340px" height="30px"></img>
+                    {/* <img src={or_img} width="340px" height="30px"></img> */}
 
                     <br/>
 
@@ -168,6 +170,8 @@ function Login(){
                     <Move_FindPassword href="/">비밀번호 찾기</Move_FindPassword>
                     
                 </Sub>
+                
+                <img src={google} width="20px" height="20px"></img>
 
             </SubBox_Right>
         </Box>
