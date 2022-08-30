@@ -1,5 +1,11 @@
 import styled from 'styled-components';
 
+export const Background = styled.div`
+    width: auto;
+    height: auto;
+    background-color: #eee;
+`
+
 export const Box = styled.div`
     width: 1200px;
     height: 650px;
@@ -8,14 +14,14 @@ export const Box = styled.div`
     margin-right: auto;
     margin-top: 140px;
     display: flex;
-    background-color: aliceblue;
+    //background-color: aliceblue;
 ` 
 
 export const SubBox_Left = styled.div` //사진 들어갈 부분
     display: flex;
     width: 600px;
     height: 650px;
-    background-color: #eee;
+    //background-color: #eee;
     border-radius: 10px 0px 0px 10px;
     display: flex;
     align-items: center;
@@ -25,7 +31,7 @@ export const SubBox_Left = styled.div` //사진 들어갈 부분
 export const SubBox_Right = styled.div` //글 & 로그인 영역
     width: 600px;
     height: 650px;
-    //background-color: #eee;
+    background-color: white;
     border-radius: 0px 10px 10px 0px;
 `
 
@@ -37,28 +43,27 @@ export const LoginBox = styled.div` //글 제외 로그인 영역
 
 export const Input = styled.input` //아이디, 비밀번호 input 영역
     width: 300px;
-    height: 35px;
-    border-radius: 10px;
-    border: 0.5px solid;
-    margin-bottom: 10px;
-    //box-shadow: 1px 1px 0px 0px #8B8B8B;
+    height: 40px;
+    border-radius: 20px;
+    margin-bottom: 20px;
     outline: 0;
-    border: 1px solid black;
+    border: 0;
+    background-color: #eee;
 `
 
 export const Button = styled.button` //로그인 버튼 영역
     width: 307px;
     height: 45px;
-    border-radius: 10px;
+    border-radius: 20px;
     border: 0;
     outline: 0;
     background-color: #8B8B8B;
-    //box-shadow: 1px 1px 0px 0px #8B8B8B;
     margin-top: 30px;
 
     color: white;
     font-size: 20px;
     font-weight: bold;
+
     &:hover{  
         background-color : white;
         color: black;
@@ -86,15 +91,14 @@ export const CheckBox = styled.input` //체크 박스 영역
 export const LargeFont = styled.h1` //제일 큰 제목
     font-size: 35px;
     font-weight: bold;
-    margin-left: 90px;
-    margin-bottom: -5px;
-    margin-top: 50px;
+    margin-bottom: 15px;
 `
 
 export const MiddleFont = styled.h3` //중간 사이즈 제목
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
-    color: #818181;
+    color: #C9C9C9;
+    margin-top: 100px;
 `
 
 export const Sub = styled.div` //회원가입 / 아이디찾기 / 비밀번호 찾기 페이지로 이동하는 구역
@@ -104,7 +108,7 @@ export const Sub = styled.div` //회원가입 / 아이디찾기 / 비밀번호 �
 
 export const Move_Register = styled.a` //회원가입 이동
     font-size: 12px;
-    margin-left: 95px;
+    margin-left: 155px;
 `
 
 export const Move_FindId = styled.a` //아이디 찾기 이동
@@ -121,4 +125,17 @@ export const Img_Part = styled.div` //구글, 카카오톡 소셜 로그인 이�
     display: flex;
     justify-content: center;
     margin-top: 20px;
+`
+
+export const Text = styled.div`
+    font-size: 15px;
+    color: #828282;
+`
+
+export const Sub_LoginText = styled.div`
+    font-size: 15px;
+    color: #828282;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
 `

@@ -23,9 +23,10 @@ function Login(){
             </L.SubBox_Left>
             <L.SubBox_Right>
 
-                <L.LargeFont>실버존</L.LargeFont>
-
+                
                 <L.LoginBox>
+                    <L.MiddleFont>SILVERZONE</L.MiddleFont>
+                    <L.LargeFont>LOGIN</L.LargeFont>
 
                     {/* <MiddleFont>다른 서비스로 로그인</MiddleFont> */}
 
@@ -42,7 +43,7 @@ function Login(){
 
                     <br></br>
 
-                    <L.Keep><L.CheckBox type="checkbox" name="keep"></L.CheckBox>로그인 상태 유지</L.Keep>
+                    <L.Keep><L.CheckBox type="checkbox" name="keep"></L.CheckBox><L.Text>로그인 상태 유지</L.Text></L.Keep>
 
                     <L.Button onClick={()=>{
                         axios.post('',{asdf:id, asad:password})
@@ -58,7 +59,10 @@ function Login(){
                     
                 </L.Sub>
 
+                <L.Sub_LoginText>소셜로그인</L.Sub_LoginText>
+
                 <L.Img_Part>
+                    
                     <img src={google} width="30px" height="30px" className="google" onClick={()=>{
                         // axios.get('https://kauth.kakao.com/oauth/authorize?response_type=code&client_id=${REST_API_KEY}&redirect_uri=${REDIRECT_URI}')
                         // .then((result)=>{})
