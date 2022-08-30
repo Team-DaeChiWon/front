@@ -1,6 +1,5 @@
 import React, { useState } from "react"
 import { useNavigate } from "react-router-dom";
-import styled from "styled-components";
 import Main_image from '../image/login.png';
 import or_img from '../image/or_img.jpg';
 import google from '../image/google.png';
@@ -20,7 +19,7 @@ function Login(){
     return(
         <L.Box>
             <L.SubBox_Left>
-                <img src={Main_image} width="500px" height="500px"/>
+                <img src={Main_image} width="600px" height="650px"/>
             </L.SubBox_Left>
             <L.SubBox_Right>
 

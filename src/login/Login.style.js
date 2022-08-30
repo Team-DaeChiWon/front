@@ -1,20 +1,21 @@
 import styled from 'styled-components';
 
 export const Box = styled.div`
-    width: 950px;
-    height: 550px;
+    width: 1200px;
+    height: 650px;
     border-radius: 10px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10%;
+    margin-top: 140px;
     display: flex;
+    background-color: aliceblue;
 ` 
 
 export const SubBox_Left = styled.div` //사진 들어갈 부분
     display: flex;
-    width: 475px;
-    height: 550px;
-    //background-color: #eee;
+    width: 600px;
+    height: 650px;
+    background-color: #eee;
     border-radius: 10px 0px 0px 10px;
     display: flex;
     align-items: center;
@@ -22,8 +23,8 @@ export const SubBox_Left = styled.div` //사진 들어갈 부분
 `
 
 export const SubBox_Right = styled.div` //글 & 로그인 영역
-    width: 475px;
-    height: 550px;
+    width: 600px;
+    height: 650px;
     //background-color: #eee;
     border-radius: 0px 10px 10px 0px;
 `
