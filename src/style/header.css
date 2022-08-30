@@ -1,5 +1,5 @@
 .header{
-  height: 60px;
+  padding: 10px;
 }
 
 .Name{
@@ -8,10 +8,11 @@
   margin-right: 30px;
 }
 
-.header_login{
+.margin{
   margin-left: 880px;
 }
 
-.header_register{
-
+a{
+  text-decoration: none;
+  color: #828282;
 }
