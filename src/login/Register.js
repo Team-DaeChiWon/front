@@ -56,9 +56,7 @@ function Login(){
                 </L.LoginBox>
 
                 <L.Sub>
-                    <L.Move_Register href="/login">로그인</L.Move_Register>
-                    <L.Move_FindId href="/">아이디 찾기</L.Move_FindId>
-                    <L.Move_FindPassword href="/">비밀번호 찾기</L.Move_FindPassword>
+                    <L.Move_Register href="/login">Login</L.Move_Register>
                 </L.Sub>
                 
 
