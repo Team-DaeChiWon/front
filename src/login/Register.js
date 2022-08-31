@@ -35,16 +35,16 @@ function Login(){
 
                     <br/>
 
-                    <L.Input placeholder="  아이디" onChange={(e)=>{
+                    <L.Input placeholder="아이디" onChange={(e)=>{
                         setId(e.target.value)
                     }}></L.Input>
-                    <L.Input type='password' placeholder="  비밀번호" onChange={(e)=>{
+                    <L.Input type='password' placeholder="비밀번호" onChange={(e)=>{
                         setPassword(e.target.value)
                     }}></L.Input>
-                    <L.Input type='password' placeholder="  비밀번호 확인" onChange={(e)=>{
+                    <L.Input type='password' placeholder="비밀번호 확인" onChange={(e)=>{
                         setPassword(e.target.value)
                     }}></L.Input>
-                    <L.Input type='text' placeholder="  닉네임" onChange={(e)=>{
+                    <L.Input type='text' placeholder="닉네임" onChange={(e)=>{
                         setPassword(e.target.value)
                     }}></L.Input>
 

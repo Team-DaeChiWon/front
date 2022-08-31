@@ -49,6 +49,7 @@ export const Input = styled.input` //아이디, 비밀번호 input 영역
     outline: 0;
     border: 0;
     background-color: #eee;
+    padding:20px;
 `
 
 export const Button = styled.button` //로그인 버튼 영역
