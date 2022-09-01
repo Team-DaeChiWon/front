@@ -34,12 +34,6 @@ function Main(){
     </Carousel>
     
     <img  className='footer' src={Footer}/>
-    <img  className='footer' src={Footer}/>
-    <img  className='footer' src={Footer}/>
-    <img  className='footer' src={Footer}/>
-    <img  className='footer' src={Footer}/>
-    <img  className='footer' src={Footer}/>
-    <img  className='footer' src={Footer}/>
 
     </>
   )
