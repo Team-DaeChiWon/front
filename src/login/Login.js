@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Main_image from '../image/login.png';
 import or_img from '../image/or_img.jpg';
