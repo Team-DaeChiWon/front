@@ -140,3 +140,14 @@ export const Sub_LoginText = styled.div`
     justify-content: center;
     margin-top: 30px;
 `
+
+export const Same = styled.div`
+    font-size: 15px;
+    margin-bottom: 16px;
+`
+
+export const Different = styled.div`
+    font-size: 15px;
+    color: red;
+    margin-bottom: 16px;
+`

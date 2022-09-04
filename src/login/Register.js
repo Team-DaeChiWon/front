@@ -13,6 +13,8 @@ function Login(){
 
     let [id, setId] = useState()
     let [password, setPassword] = useState()
+    let [checkPassword, setCheckPassword] = useState()
+    let [name, setName] = useState()
 
     let navigate = useNavigate();
 
@@ -42,14 +44,19 @@ function Login(){
                         setPassword(e.target.value)
                     }}></L.Input>
                     <L.Input type='password' placeholder="비밀번호 확인" onChange={(e)=>{
-                        setPassword(e.target.value)
+                        setCheckPassword(e.target.value)
                     }}></L.Input>
+                    {
+                        password != "" && checkPassword != "" ? 
+                        password === checkPassword ? <L.Same>비밀번호가 일치합니다</L.Same> : <L.Different>*비밀번호가 일치하지 않습니다*</L.Different>
+                        : null
+                    }
                     <L.Input type='text' placeholder="닉네임" onChange={(e)=>{
-                        setPassword(e.target.value)
+                        setName(e.target.value)
                     }}></L.Input>
-
+                    
                     <L.Button onClick={()=>{
-                        axios.post('',{asdf:id, asad:password})
+                        axios.post('',{asdf:id, asad:password, asdf:name})
                         .then(()=>{})
                     }}>회원가입</L.Button>
 

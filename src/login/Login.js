@@ -43,7 +43,7 @@ function Login(){
 
                     <br></br>
 
-                    <L.Keep><L.CheckBox type="checkbox" name="keep"></L.CheckBox><L.Text>로그인 상태 유지</L.Text></L.Keep>
+                    {/* <L.Keep><L.CheckBox type="checkbox" name="keep"></L.CheckBox><L.Text>로그인 상태 유지</L.Text></L.Keep> */}
 
                     <L.Button onClick={()=>{
                         axios.post('',{asdf:id, asad:password})
@@ -56,7 +56,6 @@ function Login(){
                     <L.Move_Register href="/register">회원가입</L.Move_Register>
                     <L.Move_FindId href="/">아이디 찾기</L.Move_FindId>
                     <L.Move_FindPassword href="/">비밀번호 찾기</L.Move_FindPassword>
-                    
                 </L.Sub>
 
                 <L.Sub_LoginText>소셜로그인</L.Sub_LoginText>
