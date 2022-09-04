@@ -143,11 +143,13 @@ export const Sub_LoginText = styled.div`
 
 export const Same = styled.div`
     font-size: 15px;
-    margin-bottom: 16px;
+    margin-bottom: 10px;
+    margin-top: -10px;
 `
 
 export const Different = styled.div`
     font-size: 15px;
     color: red;
-    margin-bottom: 16px;
+    margin-bottom: 10px;
+    margin-top: -10px;
 `

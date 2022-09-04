@@ -2,10 +2,14 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
-function MyPage(){
+import * as P from './Profile.style.js';
+
+function Profile(){
     return(
-        <div>
+        <P.BigBox>
             
-        </div>
+        </P.BigBox>
     )
 }
+
+export default Profile;

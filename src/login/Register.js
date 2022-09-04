@@ -40,6 +40,7 @@ function Login(){
                     <L.Input placeholder="아이디" onChange={(e)=>{
                         setId(e.target.value)
                     }}></L.Input>
+
                     <L.Input type='password' placeholder="비밀번호" onChange={(e)=>{
                         setPassword(e.target.value)
                     }}></L.Input>
@@ -51,6 +52,7 @@ function Login(){
                         password === checkPassword ? <L.Same>비밀번호가 일치합니다</L.Same> : <L.Different>*비밀번호가 일치하지 않습니다*</L.Different>
                         : null
                     }
+                    
                     <L.Input type='text' placeholder="닉네임" onChange={(e)=>{
                         setName(e.target.value)
                     }}></L.Input>
