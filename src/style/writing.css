@@ -1,0 +1,33 @@
+.wrbg{
+  background-color: #E7E7E7;
+  width: 100%;
+  height: 100vh;
+}
+
+.writer{
+  position: absolute;
+  top: 12%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 50%;
+  min-width: 500px;
+  border-bottom: 3px solid;
+}
+
+.wrh3{
+  padding: 10px;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.writingBox{
+  position: absolute;
+  top: 22%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 50%;
+  height: 70%;
+  min-width: 500px;
+  background-color: #fff;
+  border-radius: 10px;
+}

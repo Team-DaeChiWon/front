@@ -1,5 +1,6 @@
 .navbar{
   position: relative;
+  padding: 0px;
 }
 
 .header{
@@ -21,11 +22,16 @@
 }
 
 .margin{
-  margin-left: 800px;
+  display: flex;
+  position: absolute;
+  right: 16%;
 }
-
 
 a{
   text-decoration: none;
   color: #545454;
+}
+
+.navbar-toggler{
+  margin-right: 14%;
 }

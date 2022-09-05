@@ -6,6 +6,7 @@ import Register from './login/Register.js';
 import Header from './Header.js';
 import Main from './main/Main.js';
 import Profile from './profile/Profile.js';
+import Writing from './writing/Writing.js';
 
 function App(){
     return(
@@ -16,6 +17,7 @@ function App(){
                 <Route path='/header' element={<Header></Header>}></Route>
                 <Route path='/' element={<Main></Main>}></Route>
                 <Route path='/profile' element={<Profile></Profile>}></Route>
+                <Route path='/writing' element={<Writing/>}></Route>
             </Routes>
         </div>
     )
