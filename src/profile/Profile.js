@@ -5,6 +5,7 @@ import axios from "axios";
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 
+import profile from '../image/profile.png';
 
 import * as P from './Profile.style.js';
 
@@ -15,11 +16,11 @@ function Profile(){
     let [checkPassword, setCheckPassword] = useState();
 
     return(
-
+        <div className="backgroundColor">
         <P.BigBox>
 
             <P.Main>
-                <P.Img></P.Img>
+                <P.Img src={profile}></P.Img>
                 <P.Name>이름</P.Name>
             </P.Main>
 
@@ -36,12 +37,14 @@ function Profile(){
 
                 <Tab eventKey="profile" title="보안">
                     <P.Change_Password_Part>
-                        <P.H5>현재 비밀번호</P.H5>
-                        <P.Input placeholder="현재 비밀번호"></P.Input>
-                        <P.H5>새 비밀번호</P.H5>
-                        <P.Input placeholder="새 비밀번호"></P.Input>
-                        <P.H5>비밀번호 확인</P.H5>
-                        <P.Input placeholder="비밀번호 확인"></P.Input>
+                        <P.fontSize>현재 비밀번호</P.fontSize>
+                        <P.Input placeholder="현재 비밀번호" onChange={(e)=>{nowPassword(e.target.value)}}></P.Input>
+
+                        <P.fontSize>새 비밀번호</P.fontSize>
+                        <P.Input placeholder="새 비밀번호" onChange={(e)=>{newPassword(e.target.value)}}></P.Input>
+
+                        <P.fontSize>비밀번호 확인</P.fontSize>
+                        <P.Input placeholder="비밀번호 확인" onChange={(e)=>{checkPassword(e.target.value)}}></P.Input>
                     </P.Change_Password_Part>
                 </Tab>
 
@@ -52,6 +55,7 @@ function Profile(){
             </Tabs>
 
         </P.BigBox>
+        </div>
     )
 }
 
