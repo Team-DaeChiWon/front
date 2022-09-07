@@ -1,13 +1,12 @@
 .navbar{
   position: relative;
-  padding: 0px;
+  padding: 4px;
 }
 
 .header{
   padding: 10px;
   height: 80px;
   background-color: #ffffff85;
-  position: fixed;
   top: 0;
   left: 0;
   right: 0;
