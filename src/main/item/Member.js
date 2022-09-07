@@ -1,13 +1,15 @@
 import "../../style/main.css";
 import User from "../../image/user.svg";
+import Notice from "./Notice";
 
 function Member() {
   return(
     <>
     <div className="proBox">
       <div className="menu">
-        
+        <Notice/>
       </div>
+
       <div className="mbBox"> 
         <div className="mbimg user">
           <img className="userimg" src={User}/>
@@ -17,7 +19,10 @@ function Member() {
           </div>
         </div>
 
-        <div className="mb-menu user"></div>
+        <div className="mb-menu user">
+
+        </div>
+
       </div>
     </div>
     </>
