@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const BigBox = styled.div`
-    background-color: aliceblue;
+    background-color: white;
     width: 900px;
     height: 600px;
     margin-left: auto;
@@ -21,19 +21,21 @@ export const Name = styled.h1`
     font-size: 18px;
 `
 
-export const Img = styled.div`
-    width: 150px;
-    height: 150px;
+export const Img = styled.img`
+    width: 170px;
+    height: 170px;
     border-radius: 100%;
-    background-color: wheat;
-    margin: 20px;
+    margin: 15px;
 `
 
 export const Change_Password_Part = styled.div`
+    width: 500px;
+    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: #F5F5F5;
 `
 
 export const Input = styled.input`
@@ -44,8 +46,10 @@ export const Input = styled.input`
     border: 0;
     outline: 0;
     border-radius: 10px;
+    background-color: #F5F5F5;
 `
 
-export const H5 = styled.h5`
-    margin-right: 300px;
+export const fontSize = styled.div`
+    font-size: 17px;
+    margin-right: 290px;
 `
