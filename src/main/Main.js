@@ -4,6 +4,7 @@ import MainImg from "../image/main.svg"
 import MainImg1 from "../image/main1.svg"
 import MainImg2 from "../image/main2.svg"
 import Footer from "../image/footer.svg"
+import Member from "./item/Member";
 import '../style/main.css'
 
 import {Carousel} from 'react-bootstrap';
@@ -33,6 +34,7 @@ function Main(){
       </Carousel.Item>
     </Carousel>
     
+    <Member/>
     <img  className='footer' src={Footer}/>
 
     </>
