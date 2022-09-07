@@ -2,9 +2,6 @@
   width: 100%;
 }
 
-.carousel{
-  margin-top: 80px;
-}
 
 .proBox{
   display: flex;
@@ -20,7 +17,17 @@
 
 .mbBox{
   float: right;
+  position: relative;
   width: 40%;
   height: 100%;
   background-color: aquamarine;
+}
+
+.mbimg{
+  position: absolute;
+  top: 10%;
+  right: 40%;
+  width: 400px;
+  height: 250px;
+  background-color: #fff;
 }

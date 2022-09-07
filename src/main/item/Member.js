@@ -8,9 +8,10 @@ function Member() {
         
       </div>
       <div className="mbBox">
-        <div className="mbimg"></div>
-        <h6>닉네임</h6>
-        <p className="mbp">분류</p>
+        <div className="mbimg">
+          <h6>닉네임</h6>
+          <p className="mbp">분류</p>
+        </div>
       </div>
     </div>
     </>
