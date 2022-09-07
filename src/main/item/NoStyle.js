@@ -18,18 +18,18 @@ export const Import=styled.div`
   transform: translate(-50%);
   font-size:26px;
   font-weight:700;
-  padding:60px 0px 10px 10px;
+  padding:100px 0px 10px 10px;
 `
 
 export const Top=styled.div`
   position:absolute;
   width: 100%;
-  height: 40%;
+  height: 50%;
 `
 
 export const Bottom=styled.div`
   position:absolute;
   width: 100%;
-  height: 60%;
+  height: 50%;
   bottom: 0%;
 `
