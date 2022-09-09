@@ -4,7 +4,7 @@ export const NoBox = styled.div`
     position:absolute;
     left:13%;
     bottom:10%;
-    width:86%;
+    width:90%;
     height:66%;
     background-color:#fff;
     border-radius:20px;
