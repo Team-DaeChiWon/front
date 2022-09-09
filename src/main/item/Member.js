@@ -8,16 +8,14 @@ import { useState } from "react";
 
 function Member() {
 
-  const [mdata, setMdata]=useState()
-
-  useEffect(() => {
-    axios.get('https://jsonplaceholder.typicode.com/todos/1')
+  const a = async() => {
+    await axios.get('/')
     .then((res) => {
-      setMdata(res.data)
-    }).catch(()=>{
-      console.log("실패")
+      console.log(res)
+    }).catch((err) => {
+      console.log(err)
     })
-  })
+  }
 
   return(
     <>
