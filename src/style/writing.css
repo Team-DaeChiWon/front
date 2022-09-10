@@ -1,10 +1,10 @@
-.wrbg{
-  background-color: #E9ECEF;
+.wrbg {
+  background-color: #e9ecef;
   width: 100%;
-  height: 100vh;
+  height: 90vh;
 }
 
-.writer{
+.writer {
   position: absolute;
   top: 12%;
   left: 50%;
@@ -14,13 +14,13 @@
   border-bottom: 3px solid;
 }
 
-.wrh3{
+.wrh3 {
   padding: 10px;
   font-size: 26px;
   font-weight: 700;
 }
 
-.writingBox{
+.writingBox {
   position: absolute;
   top: 22%;
   left: 50%;
@@ -32,7 +32,7 @@
   border-radius: 10px;
 }
 
-.writingText{
+.writingText {
   position: absolute;
   left: 50%;
   top: 10%;
@@ -42,15 +42,15 @@
   width: 90%;
 }
 
-.wrBtn{
+.wrBtn {
   display: flex;
   justify-content: flex-end;
 }
 
-.sbtn{
+.sbtn {
   width: 100px;
   height: 50px;
-  margin:10px;
+  margin: 10px;
   border-radius: 10px;
   background-color: #000;
   color: #fff;
@@ -59,21 +59,21 @@
   border: none;
 }
 
-.sbtn:hover{
+.sbtn:hover {
   outline: 4px solid #579aff85;
 }
 
-.wrtextarea{
+.wrtextarea {
   height: 330px;
   margin: 10px;
   padding: 10px;
   border-radius: 10px;
-  resize:none;
+  resize: none;
   background-color: #e9ecef94;
-  border:none
+  border: none;
 }
 
-.wrinput{
+.wrinput {
   height: 50px;
   margin: 10px;
   padding: 10px;
@@ -82,33 +82,32 @@
   background-color: #e9ecef94;
 }
 
-
-.btn-group{
+.btn-group {
   margin: 10px;
   height: 50px;
 }
 
 .btn-primary {
   --bs-btn-color: #000;
-  --bs-btn-bg:#e9ecef94 ;
+  --bs-btn-bg: #e9ecef94;
   --bs-btn-border-color: #fff;
   --bs-btn-hover-color: #fff;
   --bs-btn-hover-bg: #000;
   --bs-btn-hover-border-color: #c9c9c9;
-  --bs-btn-focus-shadow-rgb: 49,132,253;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
   --bs-btn-active-color: #ffffff;
   --bs-btn-active-bg: #828282;
   --bs-btn-active-border-color: #000;
-  --bs-btn-active-shadow: inset 0 3px 5pxrgba(0, 0, 0, 0.125);
+  --bs-btn-active-shadow: inset 0 3px 5pxrgba (0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
   --bs-btn-disabled-bg: #000;
 }
 
-.selected{
+.selected {
   --bs-btn-bg: #000;
   --bs-btn-color: #fff;
 }
 
-.writinginput:focus{
+.writinginput:focus {
   outline: 4px solid #579aff85;
 }
