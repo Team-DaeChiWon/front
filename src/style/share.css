@@ -4,8 +4,8 @@
     height: 100vh;
 }
 
-#title{
-    position: absolute;
+#func{
+    position: fixed;
     top: 12%;
     left: 25%;
     width: 50%;
@@ -16,4 +16,54 @@ h3{
     font-size: 26px;
     padding: 10px;
     font-weight: 700;
+}
+
+#shareBox{
+    position: absolute;
+    top: 19%;
+    left: 25%;
+    width: 50%;
+    height: 70vh;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+#shareTitle{
+    width: 100%;
+    height: 10%;
+    border-bottom: 3px solid;
+}
+
+#title{
+    font-size: 20px;
+    margin-left: 23px;
+    margin-top: 18px;
+    font-weight: 500;
+}
+
+#left{
+    float: left;
+    margin-left: 23px;
+}
+
+#wirter{
+    float: left;
+}
+
+#date{
+    float: left;
+}
+
+#right{
+    float: left;
+    margin-left: 60%;
+}
+
+#views{
+    float: left;
+}
+
+#recom{
+    float: left;
 }
