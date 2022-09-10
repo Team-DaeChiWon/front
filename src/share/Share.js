@@ -1,4 +1,3 @@
-import Header from "../Header";
 import '../style/share.css'
 
 function Share(){
@@ -6,7 +5,6 @@ function Share(){
 
   return(
     <>
-      <Header/>
       <div id='share'>
         <div id='func'>
           <h3>자료 공유</h3>
