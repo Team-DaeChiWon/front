@@ -22,7 +22,7 @@ function App() {
         <Route path="/profile" element={<Profile />} />
         <Route path="/writing" element={<Writing />} />
         <Route path="/share" element={<Share />} />
-        <Route path="educationplan" element={<EducationPlan />} />
+        <Route path="/educationplan" element={<EducationPlan />} />
       </Routes>
     </div>
   );
