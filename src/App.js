@@ -1,6 +1,7 @@
 import React from "react";
 import { Routes, Route, Link } from "react-router-dom";
 
+<<<<<<< baejin1018
 import Login from "./login/Login.js";
 import Register from "./login/Register.js";
 import Header from "./Header.js";
@@ -19,6 +20,7 @@ function App() {
         <Route path="/" element={<Main />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/writing" element={<Writing />} />
+         <Route path="/share" element={<Share/>}/>
       </Routes>
     </div>
   );

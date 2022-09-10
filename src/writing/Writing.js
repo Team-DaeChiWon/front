@@ -49,23 +49,18 @@ function Writing() {
                 안내
               </Button>
             </ButtonGroup>
-            <input
-              className="wrinput writinginput"
-              type="text"
-              placeholder="제목"
-            />
-            <textarea className="wrtextarea writinginput" placeholder="내용" />
-            <div className="wrBtn">
-              <button
-                className="sbtn"
-                onClick={() => {
-                  axios
-                    .post("", { asdf: selected, adfa: title, zsdf: item })
-                    .then(() => {});
-                }}
-              >
-                삭제
-              </button>
+              <input className='wrinput writinginput' type='text' placeholder='제목'
+              onChange={(e)=>{
+                setTitle(e.target.value)}}/>
+              <textarea className='wrtextarea writinginput' placeholder='내용'
+              onChange={(e)=>{
+                setTitle(e.target.value)}}/>
+              <div className='wrBtn'>
+              <button className='sbtn'
+              onClick={()=>{
+                axios.post('',{asdf:selected, adfa:title, zsdf:item})
+                .then(()=>{})
+            }}>삭제</button>
 
               <button
                 className="sbtn"
