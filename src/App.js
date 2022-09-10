@@ -7,6 +7,7 @@ import Header from './Header.js';
 import Main from './main/Main.js';
 import Profile from './profile/Profile.js';
 import Writing from './writing/Writing.js';
+import Share from './share/Share.js';
 
 function App(){
     return(
@@ -18,6 +19,7 @@ function App(){
                 <Route path='/' element={<Main></Main>}></Route>
                 <Route path='/profile' element={<Profile></Profile>}></Route>
                 <Route path='/writing' element={<Writing/>}></Route>
+                <Route path="/share" element={<Share/>}></Route>
             </Routes>
         </div>
     )
