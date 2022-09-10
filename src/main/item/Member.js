@@ -1,6 +1,7 @@
 import "../../style/main.css";
 import User from "../../image/user.svg";
 import Notice from "./Notice";
+import New from './New.js'
 import axios from "axios";
 import { useEffect } from 'react';
 import { useState } from "react";
@@ -8,7 +9,7 @@ import { useState } from "react";
 
 function Member() {
 
-  const a = async() => {
+  const data = async() => {
     await axios.get('/')
     .then((res) => {
       console.log(res)
@@ -21,6 +22,7 @@ function Member() {
     <>
     <div className="proBox">
       <div className="menu">
+        <New/>
         <Notice/>
       </div>
 
