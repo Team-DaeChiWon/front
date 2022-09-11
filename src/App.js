@@ -7,7 +7,7 @@ import Header from "./Header.js";
 import Main from "./main/Main.js";
 import Profile from "./profile/Profile.js";
 import Writing from "./writing/Writing.js";
-import Share from "./share/Share.js";
+import Share from "./post/Post.js";
 import EducationPlan from "./educationplan/EducationPlan.jsx";
 
 function App() {

@@ -1,4 +1,4 @@
-import '../style/share.css'
+import '../style/post.css'
 
 function Share(){
 
