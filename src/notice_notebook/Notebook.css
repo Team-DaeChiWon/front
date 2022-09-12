@@ -1,0 +1,56 @@
+.background{
+    background-color: #E9ECEF;
+    width: 100%;
+    height: 100vh;
+}
+
+.title{
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 50%;
+    min-width: 500px;
+    border-bottom: 3px solid;
+}
+
+.font{
+    padding: 10px;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+/* .table_area {
+    flex: 1;
+}
+  
+.table_feed {
+    display: flex;
+}
+
+.table_item {
+    flex:1;
+} */
+
+.table_title{
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.table_th_title{
+    padding-left: 300px;
+    padding-right: 300px;
+    border-bottom: 3px solid wheat;
+}
+
+.table_th_date{
+    padding-left: 148px;
+    padding-right: 148px;
+    border-bottom: 3px solid;
+}
+
+.table_td_title{
+}
+
+.table_td_date{
+}

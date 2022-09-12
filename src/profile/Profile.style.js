@@ -1,13 +1,15 @@
 import styled from "styled-components";
 
 export const BigBox = styled.div`
-    background-color: white;
-    width: 900px;
-    height: 700px;
-    margin-left: auto;
-    margin-right: auto;
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 50%;
+    height: 70%;
+    min-width: 500px;
+    background-color: #fff;
     border-radius: 10px;
-    margin-top: 160px;
 `
 
 export const Main = styled.div`
@@ -19,24 +21,25 @@ export const Main = styled.div`
 
 export const Name = styled.h1`
     font-size: 18px;
+    margin-bottom: 30px;
 `
 
 export const Img = styled.img`
     width: 170px;
     height: 170px;
     border-radius: 100%;
-    margin: 15px;
+    margin: 5px;
 `
 
 export const Box = styled.div`
     width: 600px;
-    height: 400px;
+    height: 350px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     background-color: #F5F5F5;
-    margin-top: 15px;
+    margin-top: 13px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px;
@@ -44,18 +47,21 @@ export const Box = styled.div`
 
 export const Input = styled.input`
     width: 400px;
-    height: 35px;
-    margin-bottom: 10px;
+    height: 40px;
+    margin-bottom: 15px;
     margin-top: 10px;
     border: 0;
     outline: 0;
     border-radius: 10px;
-    background-color: white;
+    background-color: #D9D9D9;
 `
 
 export const fontSize = styled.div`
     font-size: 17px;
     margin-right: 290px;
+    margin-bottom: 20px;
+    margin-top: -20px;
+    
 `
 
 export const Button = styled.button`
@@ -65,7 +71,8 @@ export const Button = styled.button`
     margin-top: 10px;
     border: 0;
     outline: 0;
-    background-color: white;
+    background-color: black;
+    color: white;
     &:hover{
         background-color: #F5F5F5;
     }
@@ -74,12 +81,23 @@ export const Button = styled.button`
 export const Same = styled.div`
     font-size: 15px;
     margin-bottom: 10px;
-    margin-top: -10px;
 `
 
 export const Different = styled.div`
     font-size: 15px;
     color: red;
     margin-bottom: 10px;
-    margin-top: -10px;
+`
+
+export const Table_flex = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+`
+
+export const Cafe_Img = styled.div`
+    width: 50px;
+    height: 50px;
+    background-color: aqua;
 `

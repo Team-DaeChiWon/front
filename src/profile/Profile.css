@@ -1,9 +1,44 @@
-.backgroundColor{
+.background{
     background-color: #F5F5F5;
+    width: 100%;
+    height: 100vh;
 }
 
 .TabsFlex{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.table_area {
+    flex: 1;
+}
+  
+.table_feed {
+    display: flex;
+}
+
+.table_item {
+    flex:1;
+}
+
+.table_title{
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.title{
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 50%;
+    min-width: 500px;
+    border-bottom: 3px solid;
+}
+
+.font{
+    padding: 10px;
+    font-size: 26px;
+    font-weight: 700;
 }
