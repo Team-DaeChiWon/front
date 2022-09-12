@@ -51,3 +51,20 @@ export const ImBox=styled.div`
   color:#fff;
   padding:10px
 `
+
+export const plus = styled.button`
+  width:80px;
+  height:34px;
+  font-size:16px;
+  border:none;
+  border-radius:4px;
+  background:#000;
+  color:#fff;
+  position: absolute;
+  bottom: 8%;
+  right: 4%;
+  &:hover,
+  &:focus{
+    outline: 4px solid #579aff85;
+  }
+`
