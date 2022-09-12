@@ -1,11 +1,11 @@
 import React from 'react';
 import * as N from './NoStyle.js';
-import { useState } from 'react';
 
 function Notice() {
 
-  const []=useState()
-  let d={date:2022}
+  const top=[2022, 2021, 2023];
+  const result = top.map((num) => <N.ImBox>{num}</N.ImBox>);
+  console.log(result);
 
   return(
     <>
@@ -13,14 +13,14 @@ function Notice() {
       <N.Top>
         <N.Import>공지</N.Import>
         <N.ImportBox>
-          <N.ImBox>{d.date}</N.ImBox>
+          {result}
         </N.ImportBox>
       </N.Top>
 
       <N.Bottom>
         <N.Import>알림장</N.Import>
         <N.ImportBox>
-          <N.ImBox>{d.date}</N.ImBox>
+          {result}
         </N.ImportBox>
       </N.Bottom>
     </N.NoBox>

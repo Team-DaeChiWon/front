@@ -38,8 +38,7 @@ export const ImportBox=styled.div`
   top: 50%;
   position: absolute;
   left: 54%;
-  overflow: auto;
-  width: 80%;
+  width: 76%;
   transform:translate(-50%)
 `
 
