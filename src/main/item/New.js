@@ -1,8 +1,8 @@
 import React from 'react';
 import * as Ne from './NewStyle.js';
+import {useState} from 'react';
 
 function New() {
-
   let d={name:'1'}
 
   return(

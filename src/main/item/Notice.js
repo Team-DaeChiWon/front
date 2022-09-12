@@ -4,6 +4,7 @@ import { useState } from 'react';
 
 function Notice() {
 
+  const []=useState()
   let d={date:2022}
 
   return(
