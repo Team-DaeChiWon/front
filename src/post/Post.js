@@ -5,12 +5,12 @@ function Share(){
 
   return(
     <>
-      <div id='share'>
+      <div id='post'>
         <div id='func'>
           <h3>자료 공유</h3>
         </div>
-        <div id='shareBox'>
-            <div id='shareTitle'>
+        <div id='postBox'>
+            <div id='postTitle'>
                 <div id='title'>자료 공유합니다~</div>
                 <div id='left'>
                     <div id='wirter'>성이름</div>
@@ -21,8 +21,8 @@ function Share(){
                     <div id='recom'>추천 : 2</div>
                 </div>
             </div>
-            <div id='shareContents'>
-
+            <div id='postContents'>
+              
             </div>
         </div>
       </div>
