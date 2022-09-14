@@ -7,7 +7,7 @@ import Header from "./Header.js";
 import Main from "./main/Main.js";
 import Profile from "./profile/Profile.js";
 import Writing from "./writing/Writing.js";
-import Share from "./post/Post.js";
+import Post from "./post/Post.js";
 import EducationPlan from "./educationplan/EducationPlan.jsx";
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
         <Route path="/" element={<Main />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/writing" element={<Writing />} />
-        <Route path="/share" element={<Share />} />
+        <Route path="/post" element={<Post />} />
         <Route path="/educationplan" element={<EducationPlan />} />
       </Routes>
     </div>
