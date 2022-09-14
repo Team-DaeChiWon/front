@@ -2,15 +2,15 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
-import Tab from 'react-bootstrap/Tab';
-import Tabs from 'react-bootstrap/Tabs';
+import Tab from "react-bootstrap/Tab";
+import Tabs from "react-bootstrap/Tabs";
 
-import profile from '../image/profile.png';
+import profile from "../image/profile.png";
 
-import * as P from './Profile.style.js';
-import './Profile.css';
+import * as P from "./Profile.style.js";
+import "./Profile.css";
 
-function Profile(){
+function Profile() {
 
     useEffect(() => {
         loadPage()

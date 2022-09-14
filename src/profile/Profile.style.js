@@ -1,5 +1,13 @@
 import styled from "styled-components";
 
+export const Container = styled.div`
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+`;
+
 export const BigBox = styled.div`
     position: absolute;
     top: 22%;
@@ -11,13 +19,20 @@ export const BigBox = styled.div`
     background-color: #fff;
     border-radius: 10px;
 `
+  // background-color: white;
+  // width: 900px;
+  // height: 700px;
+  // margin-left: auto;
+  // margin-right: auto;
+  // border-radius: 10px;
+  // margin-top: 160px;
 
 export const Main = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+`;
 
 export const Name = styled.h1`
     font-size: 18px;
