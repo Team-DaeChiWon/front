@@ -9,6 +9,7 @@ import Profile from "./profile/Profile.js";
 import Writing from "./writing/Writing.js";
 import Post from "./post/Post.js";
 import EducationPlan from "./educationplan/EducationPlan.jsx";
+import Notebook from "./notice_notebook/Notebook.js";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/writing" element={<Writing />} />
         <Route path="/post" element={<Post />} />
         <Route path="/educationplan" element={<EducationPlan />} />
+        <Route path="/notebook" element={<Notebook />} />
       </Routes>
     </div>
   );

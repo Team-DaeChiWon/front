@@ -10,3 +10,8 @@ input[type="checkbox"]:checked {
 .kakaotalk {
   margin-left: 10px;
 }
+
+.selected {
+  --bs-btn-bg: #000;
+  --bs-btn-color: #fff;
+}
