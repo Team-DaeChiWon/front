@@ -9,10 +9,13 @@ import { useState } from "react";
 
 function Member() {
 
+  let [name, setName]=useState({})
+
   const data = async() => {
-    await axios.get('/')
+    await axios.get('10.80.162.50:8081/auth/')
     .then((res) => {
       console.log(res)
+      setName({...res})
     }).catch((err) => {
       console.log(err)
     })
@@ -30,8 +33,8 @@ function Member() {
         <div className="mbimg user">
           <img className="userimg" src={User}/>
           <div className="userbox">
-            <h6 style={{fontWeight:'700'}}>닉네임</h6>
-            <p style={{color:'#828282'}}>분류</p>
+            <h6 style={{fontWeight:'700'}}>{name.nickname}</h6>
+            <p style={{color:'#828282'}}>{name.type}</p>
           </div>
         </div>
 

@@ -25,6 +25,7 @@ export const Nb=styled.div`
   margin:20px;
   background:#000;
   color:#fff;
+  padding: 10px;
 `
 
 export const nameBox=styled.div`
