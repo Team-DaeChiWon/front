@@ -2,10 +2,24 @@ import React from 'react';
 import * as Ne from './NewStyle.js';
 import * as N from './NoStyle.js';
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
+import axios from 'axios';
 
 function New() {
-  const name=[2022, 2021, 2023];
-  const title = name.map((num) => <Ne.Nb>{num}</Ne.Nb>);
+
+  // let[newnote, setNewnote]=useState({})
+
+  // const data = async() => {
+  //   await axios.get('http://10.80.162.216:8081/auth/')
+  //   .then((res) => {
+  //     console.log(res)
+  //     setNewnote({...res})
+  //   })
+  // }
+
+  const newnote=[22,23,25]
+
+  const title = newnote.map((num) => <Ne.Nb>{num}</Ne.Nb>);
 
   let navigate=useNavigate()
 
@@ -13,9 +27,6 @@ function New() {
     <>
     <Ne.NewBox>
       <Ne.H2>최근 게시물
-      <Ne.plus onClick={()=>{
-            navigate('/')
-          }}>더보기</Ne.plus>
       </Ne.H2>
       <Ne.nameBox>
         {title}

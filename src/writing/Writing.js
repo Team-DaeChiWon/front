@@ -58,16 +58,15 @@ function Writing() {
               <div className='wrBtn'>
               <button className='sbtn'
               onClick={()=>{
-                axios.post('',{asdf:selected, adfa:title, zsdf:item})
-                .then(()=>{})
+                axios.delete('http://10.80.162.216:8081/community/{id}',{asdf:selected, adfa:title, zsdf:item})
+                .then(()=>{navigate('/')})
             }}>삭제</button>
 
               <button
                 className="sbtn"
                 onClick={() => {
-                  axios
-                    .post("", { asdf: selected, adfa: title, zsdf: item })
-                    .then(() => {});
+                  axios.post("http://10.80.162.216:8081/community/{id}", { asdf: selected, adfa: title, zsdf: item })
+                    .then(() => {navigate('/')});
                 }}
               >
                 등록

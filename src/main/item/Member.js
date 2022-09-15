@@ -3,23 +3,23 @@ import User from "../../image/user.svg";
 import Notice from "./Notice";
 import New from './New.js'
 import axios from "axios";
-import { useEffect } from 'react';
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 
 function Member() {
 
   let [name, setName]=useState({})
 
-  const data = async() => {
-    await axios.get('10.80.162.50:8081/auth/')
+  useEffect(() => {
+    axios.get(`http://10.80.162.216:8081/auth/1`)
     .then((res) => {
       console.log(res)
       setName({...res})
     }).catch((err) => {
       console.log(err)
     })
-  }
+  })
+
 
   return(
     <>

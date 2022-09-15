@@ -1,11 +1,36 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import * as N from './NoStyle.js';
 import { useNavigate } from "react-router-dom";
+import axios from 'axios';
 
 function Notice() {
 
-  const top=[2022, 2021, 2023];
-  const result = top.map((num) => <N.ImBox>{num}</N.ImBox>);
+  const note=[
+    {id:0, name:'11'},
+    {id:1, name:'121'},
+    {id:2, name:'131'},
+  ]
+
+  const nnote=[
+    {id:0, name:'111'},
+    {id:1, name:'1121'},
+    {id:2, name:'1311'},
+  ]
+
+  // let [note, setNote]=useState();
+
+  // useEffect(() => {
+  //   axios.get(`http://10.80.162.216:8081/auth/1`)
+  //   .then((res) => {
+  //     console.log(res)
+  //     setNote({...res})
+  //   }).catch((err) => {
+  //     console.log(err)
+  //   })
+  // })
+
+  const result1 = note.map((num) => <N.ImBox>{num.name}</N.ImBox>);
+  const result2 = nnote.map((num) => <N.ImBox>{num.name}</N.ImBox>);
   let navigate = useNavigate();
 
   return(
@@ -18,7 +43,7 @@ function Notice() {
           }}>더보기</N.plus>
         </N.Import>
         <N.ImportBox>
-          {result}
+          {result1}
         </N.ImportBox>
       </N.Top>
 
@@ -29,7 +54,7 @@ function Notice() {
           }}>더보기</N.plus>
         </N.Import>
         <N.ImportBox>
-          {result}
+          {result2}
         </N.ImportBox>
       </N.Bottom>
     </N.NoBox>
