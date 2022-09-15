@@ -35,17 +35,12 @@
 .table_title{
     margin-bottom: 30px;
     margin-top: 20px;
+    font-size: 18px;
 }
 
 .table_th_title{
-    padding-left: 300px;
-    padding-right: 300px;
-    border-bottom: 3px solid wheat;
-}
-
-.table_th_date{
-    padding-left: 148px;
-    padding-right: 148px;
+    padding-left: 457px;
+    padding-right: 457px;
     border-bottom: 3px solid;
 }
 
@@ -53,4 +48,77 @@
 }
 
 .table_td_date{
+}
+
+.wrbg {
+    background-color: #e9ecef;
+    width: 100%;
+    height: 90vh;
+}
+
+.writer {
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 50%;
+    min-width: 500px;
+    border-bottom: 3px solid;
+}
+  
+.wrh3 {
+    padding: 10px;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.wrBtn {
+    display: flex;
+    justify-content: flex-end;
+}
+  
+.submitbtn {
+    width: 100px;
+    height: 50px;
+    margin-top: 30px;
+    border-radius: 10px;
+    background-color: #000;
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    border: none;
+    margin-left: 600px;
+}
+
+.submitbtn:hover {
+    outline: 4px solid #579aff85;
+}
+
+.input_area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input_content {
+    height: 400px;
+    width: 700px;
+    margin-top: 80px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #e9ecef94;
+    border: none;
+    outline: none;
+}
+
+.Box{
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 50%;
+    height: 70%;
+    min-width: 500px;
+    background-color: #fff;
+    border-radius: 10px;
 }

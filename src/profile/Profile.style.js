@@ -112,7 +112,8 @@ export const Table_flex = styled.div`
 `
 
 export const Cafe_Img = styled.div`
-    width: 50px;
-    height: 50px;
-    background-color: aqua;
+    width: 60px;
+    height: 60px;
+    background-color: #8b8b8b;
+    margin-right: 20px;
 `

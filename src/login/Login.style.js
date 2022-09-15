@@ -49,8 +49,7 @@ export const Input = styled.input`
   padding: 20px;
 `;
 
-export const Button = styled.button`
-  //로그인 버튼 영역
+export const Button = styled.button` //로그인/회원가입 버튼 영역
   width: 307px;
   height: 45px;
   border-radius: 20px;
@@ -63,20 +62,17 @@ export const Button = styled.button`
   font-weight: bold;
 
   &:hover {
-    background-color: white;
-    color: black;
+    background-color: black;
   }
 `;
 
-export const Keep = styled.div`
-  //로그인 상태 유지 영역
+export const Keep = styled.div` //로그인 상태 유지 영역
   display: flex;
   margin-top: -20px;
   margin-left: -165px;
 `;
 
-export const CheckBox = styled.input`
-  //체크 박스 영역
+export const CheckBox = styled.input` //체크 박스 영역
   width: 1rem;
   height: 1rem;
   border-radius: 50%;
@@ -88,47 +84,40 @@ export const CheckBox = styled.input`
   margin-top: 4px;
 `;
 
-export const LargeFont = styled.h1`
-  //제일 큰 제목
+export const LargeFont = styled.h1` //제일 큰 제목
   font-size: 35px;
   font-weight: bold;
   margin-bottom: 15px;
 `;
 
-export const MiddleFont = styled.h3`
-  //중간 사이즈 제목
+export const MiddleFont = styled.h3` //중간 사이즈 제목
   font-size: 15px;
   font-weight: bold;
   color: #c9c9c9;
-  margin-top: 100px;
+  margin-top: 80px;
 `;
 
-export const Sub = styled.div`
-  //회원가입 / 아이디찾기 / 비밀번호 찾기 페이지로 이동하는 구역
+export const Sub = styled.div` //회원가입 / 아이디찾기 / 비밀번호 찾기 페이지로 이동하는 구역
   display: flex;
   margin-top: 5px;
 `;
 
-export const Move_Register = styled.a`
-  //회원가입 이동
+export const Move_Register = styled.a` //회원가입 이동
   font-size: 12px;
   margin-left: 155px;
 `;
 
-export const Move_FindId = styled.a`
-  //아이디 찾기 이동
+export const Move_FindId = styled.a` //아이디 찾기 이동
   font-size: 12px;
   margin-left: 90px;
 `;
 
-export const Move_FindPassword = styled.a`
-  //비밀번호 찾기 이동
+export const Move_FindPassword = styled.a` //비밀번호 찾기 이동
   font-size: 12px;
   margin-left: 10px;
 `;
 
-export const Img_Part = styled.div`
-  //구글, 카카오톡 소셜 로그인 이미지 구역
+export const Img_Part = styled.div` //구글, 카카오톡 소셜 로그인 이미지 구역
   display: flex;
   justify-content: center;
   margin-top: 20px;
@@ -147,13 +136,13 @@ export const Sub_LoginText = styled.div`
   margin-top: 30px;
 `;
 
-export const Same = styled.div`
+export const Same = styled.div` //비밀번호가 일치합니다
   font-size: 15px;
   margin-bottom: 10px;
   margin-top: -10px;
 `;
 
-export const Different = styled.div`
+export const Different = styled.div` //비밀번호가 일치하지 않습니다
   font-size: 15px;
   color: red;
   margin-bottom: 10px;
@@ -167,3 +156,26 @@ export const Container = styled.div`
   align-items: center;
   background-color: #f5f5f5;
 `;
+
+export const CheckPersonButton = styled.button` //normal, teacher 선택 버튼
+    width: 145px;
+    height: 40px;
+    border-radius: 20px;
+    outline: 0;
+    border: 0;
+    background-color: #8b8b8b;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    margin-left: 5px;
+    margin-right: 5px;
+
+    &:hover {
+        background-color: black;
+    }
+`
+
+export const CheckPersonPart = styled.div` //normal, teacher 선택 버튼 부분
+    display: flex;
+    flex-direction: row;
+`

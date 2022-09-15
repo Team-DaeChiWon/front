@@ -9,19 +9,14 @@ import './Notebook.css';
 function Notebook(){
 
     useEffect(() => {
-        loadPage()
+        // axios.get(`${ServerConfig.address}/notification/{notification-id}`)
+        // .then((result)=>{setNotebookList(result.data.notification-id)})
     }, [])
 
     let [notebookList, setNotebookList] = useState(['']);
 
-    let [title, setTitle] = useState();
-    let [date, setDate] = useState();
-
-    let loadPage = () => {
-        // axios.get('')
-        // .then((result) => {setTitle(result), setDate(result), setList(result)})
-        // .catch(() => { })
-    }
+    // let [title, setTitle] = useState();
+    // let [date, setDate] = useState();
 
     return(
         <div className="background">
@@ -36,7 +31,6 @@ function Notebook(){
                         <thead>
                             <tr>
                                 <th className="table_th_title">제목</th>
-                                <th className="table_th_date">날짜</th>
                             </tr>
                         </thead>
                     </table>
@@ -49,7 +43,6 @@ function Notebook(){
                                         <tbody className='list_hover'>
                                             <tr className="table_feed">
                                                 <td className="table_td_title">안녕하세요</td>
-                                                <td className="table_td_date">2202-09-08</td>
                                             </tr>
                                         </tbody>
                                     </table>
