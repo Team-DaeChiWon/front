@@ -8,10 +8,10 @@ import { useState, useEffect } from "react";
 
 function Member() {
 
-  let [name, setName]=useState({})
+  let [name, setName]=useState({useEffect})
 
   useEffect(() => {
-    axios.get(`http://10.80.162.216:8081/auth/1`)
+    axios.get(`http://10.80.162.216:8081/auth/`)
     .then((res) => {
       console.log(res)
       setName({...res})
@@ -33,7 +33,7 @@ function Member() {
         <div className="mbimg user">
           <img className="userimg" src={User}/>
           <div className="userbox">
-            <h6 style={{fontWeight:'700'}}>{name.nickname}</h6>
+            <h6 style={{fontWeight:'700'}}>{name.nickName}</h6>
             <p style={{color:'#828282'}}>{name.type}</p>
           </div>
         </div>

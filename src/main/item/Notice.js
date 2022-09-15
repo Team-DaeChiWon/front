@@ -6,21 +6,21 @@ import axios from 'axios';
 function Notice() {
 
   const note=[
-    {id:0, name:'11'},
-    {id:1, name:'121'},
-    {id:2, name:'131'},
+    {id:0, name:'2022/11/04'},
+    {id:1, name:'2022/05/06'},
+    {id:2, name:'2022/01/12'},
   ]
 
   const nnote=[
-    {id:0, name:'111'},
-    {id:1, name:'1121'},
-    {id:2, name:'1311'},
+    {id:0, name:'2022/04/08'},
+    {id:1, name:'2022/03/24'},
+    {id:2, name:'2022/01/01'},
   ]
 
-  // let [note, setNote]=useState();
+  //let [note, setNote]=useState();
 
   // useEffect(() => {
-  //   axios.get(`http://10.80.162.216:8081/auth/1`)
+  //   axios.get(`http://10.80.162.216:8081/auth/`)
   //   .then((res) => {
   //     console.log(res)
   //     setNote({...res})

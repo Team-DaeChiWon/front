@@ -17,7 +17,7 @@ function New() {
   //   })
   // }
 
-  const newnote=[22,23,25]
+  const newnote=['2022/01/12', '2022/01/14', '2021/11/04']
 
   const title = newnote.map((num) => <Ne.Nb>{num}</Ne.Nb>);
 

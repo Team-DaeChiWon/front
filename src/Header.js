@@ -21,6 +21,8 @@ function Header() {
               <NavDropdown.Item eventKey="4.1" onClick={()=>{ navigate('/writing') }}>Writing</NavDropdown.Item>
               <NavDropdown.Item eventKey="4.2" onClick={()=>{ navigate('/post') }}>Post</NavDropdown.Item>
               <NavDropdown.Item eventKey="4.3" onClick={()=>{ navigate('/profile') }}>Profile</NavDropdown.Item>
+              <NavDropdown.Item eventKey="4.4" onClick={()=>{ navigate('/notebook') }}>Notebook</NavDropdown.Item>
+              <NavDropdown.Item eventKey="4.5" onClick={()=>{ navigate('/writenotebook') }}>WriteNotebook</NavDropdown.Item>
               <NavDropdown.Divider />
             </NavDropdown>
             <div className='margin'>
