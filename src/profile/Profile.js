@@ -16,19 +16,19 @@ function Profile() {
     useEffect(() => {
         // loadPage()
         axios.get(`${ServerConfig.address}/auth/`)
-        .then((result) => {console.log(result.status)})
-        .catch(() => {navigate('/login')})
+        .then((result) => {console.log(result)})
+        // .catch(() => {navigate('/login')})
     }, [])
 
     let [name, setName] = useState('이름');
 
-    let [cafeList, setCafeList] = useState(['카페이름1','카페이름2']);
+    let [cafeList, setCafeList] = useState(['대소고 카페','대치원 카페']);
 
     let [nowPassword, setNowPassword] = useState();
     let [newPassword, setNewPassword] = useState(null);
     let [checkPassword, setCheckPassword] = useState(null);
 
-    let [textList, setTextList] = useState(['제목1','제목2','제목3']);
+    let [textList, setTextList] = useState(['안녕하세요','환영합니다','재밌었어요']);
 
     let navigate = useNavigate();
 

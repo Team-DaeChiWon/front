@@ -76,7 +76,7 @@ export const fontSize = styled.div`
     margin-right: 290px;
     margin-bottom: 20px;
     margin-top: -20px;
-    
+    font-weight: bold;
 `
 
 export const Button = styled.button`
