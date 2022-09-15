@@ -16,7 +16,7 @@ function Profile() {
     useEffect(() => {
         // loadPage()
         axios.get(`${ServerConfig.address}/auth/`)
-        .then((result) => {console.log(result.status)})
+        .then((result) => {console.log(result)})
         .catch(() => {navigate('/login')})
     }, [])
 
