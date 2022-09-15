@@ -7,6 +7,7 @@ import * as N from './Notebook.style.js';
 
 import './Notebook.css';
 
+
 function Notebook(){
 
     useEffect(() => {
