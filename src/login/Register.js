@@ -84,7 +84,7 @@ function Register() {
           </L.LoginBox>
 
           <L.Sub>
-            <L.Move_Register href="/login">Login</L.Move_Register>
+            <L.Move_Register href="/login">로그인</L.Move_Register>
           </L.Sub>
         </L.SubBox_Right>
       </L.Box>
