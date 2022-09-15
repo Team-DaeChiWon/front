@@ -10,12 +10,14 @@ import './Notebook.css';
 
 function Notebook(){
 
-    useEffect(() => {
-        axios.get(`${ServerConfig.address}/notification/{notification-id}`)
-        .then((result)=>{setNotebookList(result.data.content)})
-    }, [])
+    /*useEffect(() => {
+        axios.get(`${ServerConfig.address}/notification/1`)
+        .then((result)=>{
+            console.log(result);
+            setNotebookList(result.data.content)})
+    }, [])*/
 
-    let [notebookList, setNotebookList] = useState(['안녕하세요 오늘은 이러한 활동을 했습니다.','내일 강한 바람이 분다고 합니다. 조심하세요','오늘 햇볕이 강합니다. 자외선 차단제를 발라주세요']);
+    let [notebookList, setNotebookList] = useState(['안녕하세요 오늘은 이러한 활동을 했습니다.','내일 강한 바람이 분다고 합니다. 조심하세요','오늘 햇볕이 강합니다. 자외선 차단제를 발라주세요','이번 주 주말에는 여러 행사들이 열립니다.']);
 
     // let [title, setTitle] = useState();
     // let [date, setDate] = useState();
