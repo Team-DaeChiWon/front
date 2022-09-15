@@ -5,6 +5,7 @@ import or_img from "../image/or_img.jpg";
 import google from "../image/google.png";
 import kakaotalk from "../image/kakaotalk.png";
 import axios from "axios";
+import ServerConfig from './../config/server.json';
 
 import "./Login.css";
 import * as L from "./Login.style";
@@ -29,13 +30,9 @@ function Login() {
             {/* <img src={or_img} width="340px" height="30px"></img> */}
             <br />
             <L.Input
-              placeholder="아이디" onChange={(e) => {
-                setId(e.target.value);
-              }}
+              placeholder="아이디" onChange={(e) => {setId(e.target.value)}}
             ></L.Input>
-            <L.Input placeholder="비밀번호" onChange={(e) => {
-                setPassword(e.target.value);
-              }}
+            <L.Input type="password" placeholder="비밀번호" onChange={(e) => {setPassword(e.target.value)}}
             ></L.Input>
 
             <br></br>
@@ -43,7 +40,7 @@ function Login() {
             {/* <L.Keep><L.CheckBox type="checkbox" name="keep"></L.CheckBox><L.Text>로그인 상태 유지</L.Text></L.Keep> */}
 
             <L.Button onClick={() => {
-                axios.post("", { asdf: id, asad: password })
+                axios.post(`${ServerConfig.address}/auth/sign-in`, { login_id: id, password: password })
                 .then((result) => {navigate("/")});
               }}
             >

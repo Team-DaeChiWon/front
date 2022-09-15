@@ -10,6 +10,7 @@ import Writing from "./writing/Writing.js";
 import Post from "./post/Post.js";
 import EducationPlan from "./educationplan/EducationPlan.jsx";
 import Notebook from "./notice_notebook/Notebook.js";
+import WriteNotebook from "./notice_notebook/WriteNotebook.js";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/post" element={<Post />} />
         <Route path="/educationplan" element={<EducationPlan />} />
         <Route path="/notebook" element={<Notebook />} />
+        <Route path="/writenotebook" element={<WriteNotebook />} />
       </Routes>
     </div>
   );

@@ -13,13 +13,23 @@
 .table_area {
     flex: 1;
 }
+
+.table_content{
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
   
 .table_feed {
     display: flex;
 }
 
-.table_item {
+.table_item { 
     flex:1;
+    padding-left: 15px;
+    padding-right: 300px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .table_title{
